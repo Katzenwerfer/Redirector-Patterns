@@ -7,3 +7,14 @@
 |__Pattern__|`youtube\.com\/shorts\/(.+)`
 |__Target__|`https://www.youtube.com/watch?v=$1`
 |__Type__|RegEx
+
+## Twitter-2-Nitter
+> Redirect Twitter URLs to Nitter
+
+|||
+|-|-
+|__Example__|[https://twitter.com/a_cool_user/status/123456789](https://twitter.com/a_cool_user/status/123456789)
+|__Pattern__|`twitter\.com\/(.+)/(.+)/(.+)`
+|__Target__|`https://my.nitter.instance/$1/$2/$3`
+|__Type__|RegEx
+|__Notes__|Make sure to replace the `my.nitter.instance` part of the target with the domain from the instance you want to use.
