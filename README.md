@@ -25,6 +25,19 @@
 |||
 |-|-
 |__Example__|[https://old.reddit.com/r/subreddit/comments/post_id/post_title/](https://old.reddit.com/r/subreddit/comments/post_id/post_title/)
-|__Pattern__|`https?:\/\/old\.reddit\.com\/(.+)`
+|__Pattern__|`old\.reddit\.com\/(.+)`
 |__Target__|`https://www.reddit.com/$1`
+|__Type__|RegEx
+
+## High quality Reddit CDN
+> Redirect preview.redd.it links to i.redd.it
+>
+> Also removes any extra parameters the URL may have
+
+
+|||
+|-|-
+|__Example__|[https://preview.redd.it/1234567890.png?param1=0&param2=0&param3=0](https://preview.redd.it/1234567890.png?param1=0&param2=0&param3=0)
+|__Pattern__|`preview\.redd\.it\/(.+)\.(.{3,4})\?`
+|__Target__|`https://i.redd.it/$1.$2`
 |__Type__|RegEx
