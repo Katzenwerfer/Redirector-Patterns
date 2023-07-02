@@ -62,3 +62,14 @@
 |__Pattern__|`wikiwand\.com\/(.+)\.m\/(.+)`
 |__Target__|`https://www.wikiwand.com/$1/$2`
 |__Type__|RegEx
+
+## High quality Discord CDN
+> Force fetch of high quality images from the Discord CDN 
+
+|||
+|-|-
+|__Example__|[https://cdn.discordapp.com/type/1234567890.jpg?param1=0&param2=0](https://cdn.discordapp.com/type/1234567890.jpg?param1=0&param2=0)
+|__Pattern__|`cdn\.discordapp\.com\/(.+)\/(.+)\.(.{3,4})`
+|__Target__|`https://cdn.discordapp.com/$1/$2.png`
+|__Type__|RegEx
+|__Notes__|In theory, you could set the pattern to apply to images so that every image inside Discord is fetched at its highest quality.
