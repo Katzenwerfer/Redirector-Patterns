@@ -40,3 +40,15 @@
 |__Pattern__|`preview\.redd\.it\/(.+)\.(.{3,4})\?`
 |__Target__|`https://i.redd.it/$1.$2`
 |__Type__|RegEx
+
+## Wikipedia-2-Wikiwand
+> Redirect Wikipedia articles to the Wikiwand website
+
+|||
+|-|-
+|__Example__|[https://en.wikipedia.org/wiki/the-article-you-want-to-read](https://en.wikipedia.org/wiki/the-article-you-want-to-read)
+|__Pattern__|`\/\/(.+)\.wikipedia\.org\/wiki\/(.+)`
+|__Target__|`https://www.wikiwand.com/$1/$2`
+|__Type__|RegEx
+|__Exclude__|`https?:\/\/(.*)\.wikipedia\.org\/wiki\/(.*)\?(oldformat=true)`
+|__Notes__|Append `?oldformat=true` to the URL to disable redirection
