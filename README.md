@@ -84,3 +84,13 @@
 |__Target__|`https://steamuserimages-a.akamaihd.net/ugc/$1/$2/?imw=1920&ima=fit&impolicy=Letterbox`
 |__Type__|RegEx
 |__Notes__|Ideally, this pattern should be set for images only.
+
+## HQ Steam Workshop image URLs
+> Remove parameters from Steam Workshop image URLs
+
+|||
+|-|-
+|__Example__|[https://steamuserimages-a.akamaihd.net/ugc/0123456789/0123456789/?imw=512&imh=512&ima=fit&impolicy=Letterbox&imcolor=#000000&letterbox=true](https://steamuserimages-a.akamaihd.net/ugc/0123456789/0123456789/?imw=512&imh=512&ima=fit&impolicy=Letterbox&imcolor=#000000&letterbox=true)
+|__Pattern__|`steamuserimages-a\.akamaihd\.net\/ugc\/(.+)\/(.+)\/`
+|__Target__|`https://steamuserimages-a.akamaihd.net/ugc/$1/$2/`
+|__Type__|RegEx
