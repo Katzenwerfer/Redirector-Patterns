@@ -73,3 +73,14 @@
 |__Target__|`https://cdn.discordapp.com/$1/$2.png`
 |__Type__|RegEx
 |__Notes__|In theory, you could set the pattern to apply to images so that every image inside Discord is fetched at its highest quality.
+
+## HQ Steam Workshop previews
+> Force fetch of high quality image previews for Steam Workshop pages
+
+|||
+|-|-
+|__Example__|[https://steamuserimages-a.akamaihd.net/ugc/0123456789/0123456789/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=#000000&letterbox=true](https://steamuserimages-a.akamaihd.net/ugc/0123456789/0123456789/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=#000000&letterbox=true)
+|__Pattern__|`steamuserimages-a\.akamaihd\.net\/ugc\/(.+)\/(.+)\/`
+|__Target__|`https://steamuserimages-a.akamaihd.net/ugc/$1/$2/?imw=1920&ima=fit&impolicy=Letterbox`
+|__Type__|RegEx
+|__Notes__|Ideally, this pattern should be set for images only.
