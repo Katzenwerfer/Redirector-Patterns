@@ -34,7 +34,6 @@
 >
 > Also removes any extra parameters the URL may have
 
-
 |||
 |-|-
 |__Example__|[https://preview.redd.it/1234567890.png?param1=0&param2=0&param3=0](https://preview.redd.it/1234567890.png?param1=0&param2=0&param3=0)
