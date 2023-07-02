@@ -51,7 +51,7 @@
 |__Target__|`https://www.wikiwand.com/$1/$2`
 |__Type__|RegEx
 |__Exclude__|`https?:\/\/(.*)\.wikipedia\.org\/wiki\/(.*)\?(oldformat=true)`
-|__Notes__|Append `?oldformat=true` to the URL to disable redirection
+|__Notes__|Append `?oldformat=true` to the URL to disable redirection.
 
 ## No Wikiwand mobile
 > Fix Wikiwand mobile redirects
