@@ -52,3 +52,13 @@
 |__Type__|RegEx
 |__Exclude__|`https?:\/\/(.*)\.wikipedia\.org\/wiki\/(.*)\?(oldformat=true)`
 |__Notes__|Append `?oldformat=true` to the URL to disable redirection
+
+## No Wikiwand mobile
+> Fix Wikiwand mobile redirects
+
+|||
+|-|-
+|__Example__|[https://www.wikiwand.com/en.m/the-article-you-want-to-read](https://www.wikiwand.com/en.m/the-article-you-want-to-read)
+|__Pattern__|`wikiwand\.com\/(.+)\.m\/(.+)`
+|__Target__|`https://www.wikiwand.com/$1/$2`
+|__Type__|RegEx
