@@ -94,3 +94,13 @@
 |__Pattern__|`steamuserimages-a\.akamaihd\.net\/ugc\/(.+)\/(.+)\/`
 |__Target__|`https://steamuserimages-a.akamaihd.net/ugc/$1/$2/`
 |__Type__|RegEx
+
+## Pseudo-fix pximg
+> Redirect i.pximg.net URLs to the actual Pixiv post
+
+|||
+|-|-
+|__Example__|[https://i.pximg.net/img-original/img/1234/12/12/12/12/12/123456789_p0.png](https://i.pximg.net/img-original/img/1234/12/12/12/12/12/123456789_p0.png)
+|__Pattern__|`pximg\.net\/.+\/(.+)_p(.{1,2})\.(.{3,4})`
+|__Target__|`https://www.pixiv.net/en/artworks/$1`
+|__Type__|RegEx
