@@ -14,10 +14,21 @@
 |||
 |-|-
 |__Example__|[https://twitter.com/a_cool_user/status/123456789](https://twitter.com/a_cool_user/status/123456789)
-|__Pattern__|`twitter\.com\/(.+)/(.+)/(.+)`
-|__Target__|`https://my.nitter.instance/$1/$2/$3`
+|__Pattern__|`twitter\.com\/(.+)`
+|__Target__|`https://my.nitter.instance/$1`
 |__Type__|RegEx
 |__Notes__|Make sure to replace the `my.nitter.instance` part of the target with the domain from the instance you want to use.
+
+## Nitter User Page Login Fix
+> Fix Nitter URLs when redirected from a login page
+
+|||
+|-|-
+|__Example__|[https://my.nitter.instance/i/flow/login?redirect_after_login=%2Fa_cool_user](https://my.nitter.instance/i/flow/login?redirect_after_login=%2Fa_cool_user)
+|__Pattern__|`my\.nitter\.instance\/i\/(.+)%2F(.+)`
+|__Target__|`https://my.nitter.instance/$2`
+|__Type__|RegEx
+|__Notes__|Make sure to replace the `my.nitter.instance` part of the pattern and target with the domain from the instance you want to use.
 
 ## No old Reddit
 > Redirect old Reddit links to new Reddit
