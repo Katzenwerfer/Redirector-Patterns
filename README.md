@@ -26,10 +26,11 @@
 |||
 |-:|-
 |__Example__|[https://nitter.net/pic/orig/media%2F1234567890.jpg](https://nitter.net/pic/orig/media%2F1234567890.jpg)
-|__Redirect__|`nitter\..+media(?:%2F|\/)(.+)\.\w+`
-|__To__|`https://pbs.twimg.com/media/$1.png`
-|__Type__|RegEx
-|__Notes__|Replace the `nitter.net` target with the domain of the instance you want to use. <BR> The pattern only works on instances with `nitter` in the subdomain.
+|__Redirect__|`https://nitter.net/pic/orig/*.*`
+|__To__|`https://pbs.twimg.com/$1.png`
+|__Type__|Wildcard
+|__Process__|URL Decode
+|__Notes__|Replace `nitter.net` from the target with the domain of the instance you use.
 
 ## No old Reddit
 > Redirect Old Reddit links to New Reddit
