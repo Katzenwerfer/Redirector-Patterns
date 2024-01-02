@@ -4,9 +4,9 @@
 |||
 |-:|-
 |__Example__|[https://www.youtube.com/shorts/1234567890](https://www.youtube.com/shorts/1234567890)
-|__Redirect__|`youtube\.com\/shorts\/(\w+)`
+|__Redirect__|`https://www.youtube.com/shorts/*`
 |__To__|`https://www.youtube.com/watch?v=$1`
-|__Type__|RegEx
+|__Type__|Wildcard
 |__Apply To__|Main window (adress bar) <BR> HistoryState
 
 ## Twitter-2-Nitter
