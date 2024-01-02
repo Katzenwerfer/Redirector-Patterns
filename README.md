@@ -59,9 +59,9 @@
 |||
 |-:|-
 |__Example__|[https://steamuserimages-a.akamaihd.net/ugc/1234567890/1234567890/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=#000000&letterbox=true](https://steamuserimages-a.akamaihd.net/ugc/1234567890/1234567890/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=#000000&letterbox=true)
-|__Redirect__|`steamuserimages-a.+\/(\w+)\/(\w+)`
+|__Redirect__|`https://steamuserimages-a.akamaihd.net/ugc/*/*/*`
 |__To__|`https://steamuserimages-a.akamaihd.net/ugc/$1/$2/`
-|__Type__|RegEx
+|__Type__|Wildcard
 |__Notes__|Apply this to `Images` if you want high quality previews
 
 ## Wikipedia-2-Wikiwand
