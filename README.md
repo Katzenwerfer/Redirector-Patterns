@@ -81,10 +81,10 @@
 |||
 |-:|-
 |__Example__|[https://cdn.discordapp.com/type/1234567890.jpg?param1=0&param2=0](https://cdn.discordapp.com/type/1234567890.jpg?param1=0&param2=0)
-|__Redirect__|`cdn\.discordapp\.com\/(\w+)\/(\w+)\.(\w+)`
+|__Redirect__|`https://cdn.discordapp.com/*/*.*?param1=0&param2=0`
 |__To__|`https://cdn.discordapp.com/$1/$2.$3`
-|__Type__|RegEx
-|__Notes__|In theory, you could set the pattern to apply to `Images` so that every image inside Discord is fetched at its highest quality. I have not been able to confirm this.
+|__Type__|Wildcard
+|__Notes__|In theory, you could set the pattern to apply to `Images` so that every image inside Discord is fetched at its highest quality. <BR> I have not been able to confirm this.
 
 ## High quality Steam Workshop media
 > Clean media URLs from the Steam Workshop CDN
