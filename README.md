@@ -42,28 +42,6 @@
 |__To__|`https://www.reddit.com/$1`
 |__Type__|Wildcard
 
-## Wikipedia-2-Wikiwand
-> Redirect Wikipedia articles to Wikiwand
-
-|||
-|-:|-
-|__Example__|[https://en.wikipedia.org/wiki/the-article-you-want-to-read](https://en.wikipedia.org/wiki/the-article-you-want-to-read)
-|__Redirect__|`(\w+)\.wikipedia\.org\/.+\/(.+)`
-|__To__|`https://www.wikiwand.com/$1/$2`
-|__Type__|RegEx
-|__Exclude__|`wikipedia\.org\/.+\?oldformat=true`
-|__Notes__|Append `?oldformat=true` to the URL to disable redirection.
-
-## No Wikiwand mobile
-> Fix Wikiwand mobile redirects
-
-|||
-|-:|-
-|__Example__|[https://www.wikiwand.com/en.m/the-article-you-want-to-read](https://www.wikiwand.com/en.m/the-article-you-want-to-read)
-|__Redirect__|`wikiwand.com\/(\w+)\.m\/(.+)`
-|__To__|`https://www.wikiwand.com/$1/$2`
-|__Type__|RegEx
-
 ## High quality Discord media
 > Clean media URLs from the Discord CDN
 
@@ -85,6 +63,28 @@
 |__To__|`https://steamuserimages-a.akamaihd.net/ugc/$1/$2/`
 |__Type__|RegEx
 |__Notes__|Apply this to `Images` if you want high quality previews
+
+## Wikipedia-2-Wikiwand
+> Redirect Wikipedia articles to Wikiwand
+
+|||
+|-:|-
+|__Example__|[https://en.wikipedia.org/wiki/the-article-you-want-to-read](https://en.wikipedia.org/wiki/the-article-you-want-to-read)
+|__Redirect__|`(\w+)\.wikipedia\.org\/.+\/(.+)`
+|__To__|`https://www.wikiwand.com/$1/$2`
+|__Type__|RegEx
+|__Exclude__|`wikipedia\.org\/.+\?oldformat=true`
+|__Notes__|Append `?oldformat=true` to the URL to disable redirection.
+
+## No Wikiwand mobile
+> Fix Wikiwand mobile redirects
+
+|||
+|-:|-
+|__Example__|[https://www.wikiwand.com/en.m/the-article-you-want-to-read](https://www.wikiwand.com/en.m/the-article-you-want-to-read)
+|__Redirect__|`wikiwand.com\/(\w+)\.m\/(.+)`
+|__To__|`https://www.wikiwand.com/$1/$2`
+|__Type__|RegEx
 
 ## 403 pximg fix
 > Redirect i.pximg.net URLs to the Pixiv post
