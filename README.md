@@ -20,17 +20,6 @@
 |__Type__|RegEx
 |__Notes__|Replace the `nitter.net` target with the domain of the instance you want to use.
 
-## Nitter User Profile Fix
-> Fix Nitter URLs when redirected from a user profile
-
-|||
-|-:|-
-|__Example__|[https://nitter.net/i/flow/login?redirect_after_login=%2Fa_cool_user](https://nitter.net/i/flow/login?redirect_after_login=%2Fa_cool_user)
-|__Redirect__|`nitter\..+login=(?:%2F|\/)(\w+)`
-|__To__|`https://nitter.net/$1`
-|__Type__|RegEx
-|__Notes__|Replace the `nitter.net` target with the domain of the instance you want to use. <BR> The pattern only works on instances with `nitter` in the subdomain.
-
 ## Nitter-2-Twitter CDN
 > Redirect Nitter media URLs to the Twitter CDN
 
