@@ -38,9 +38,9 @@
 |||
 |-:|-
 |__Example__|[https://old.reddit.com/r/subreddit/comments/post_id/post_title/](https://old.reddit.com/r/subreddit/comments/post_id/post_title/)
-|__Redirect__|`old\.reddit\.com\/(.+)`
+|__Redirect__|`https://old.reddit.com/*`
 |__To__|`https://www.reddit.com/$1`
-|__Type__|RegEx
+|__Type__|Wildcard
 
 ## High quality Reddit media
 > Redirect and clean media URLs from Reddit
