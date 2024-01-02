@@ -42,17 +42,6 @@
 |__To__|`https://www.reddit.com/$1`
 |__Type__|Wildcard
 
-## High quality Reddit media
-> Redirect and clean media URLs from Reddit
-
-|||
-|-:|-
-|__Example__|[https://preview.redd.it/1234567890.png?param1=0&param2=0&s=1234567890](https://preview.redd.it/1234567890.png?param1=0&param2=0&s=1234567890)
-|__Redirect__|`(?:preview\|i)\.redd\.it\/(\w+)\.(\w+)\?.+(s=\w+)`
-|__To__|`https://i.redd.it/$1.$2?$3`
-|__Type__|RegEx
-|__Notes__|Reddit now requires a GET token to access media from their CDN. Logged-in users might not need to provide it. <BR> Media from galleries might not work if any of their parameters are stripped.
-
 ## Wikipedia-2-Wikiwand
 > Redirect Wikipedia articles to Wikiwand
 
