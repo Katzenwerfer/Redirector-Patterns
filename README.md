@@ -15,9 +15,9 @@
 |||
 |-:|-
 |__Example__|[https://twitter.com/a_cool_user/status/1234567890](https://twitter.com/a_cool_user/status/1234567890)
-|__Redirect__|`twitter\.com\/(.+)`
+|__Redirect__|`https://twitter.com/*`
 |__To__|`https://nitter.net/$1`
-|__Type__|RegEx
+|__Type__|Wildcard
 |__Notes__|Replace the `nitter.net` target with the domain of the instance you want to use.
 
 ## Nitter-2-Twitter CDN
