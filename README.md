@@ -48,7 +48,7 @@
 |||
 |-:|-
 |__Example__|[https://cdn.discordapp.com/type/1234567890.jpg?param1=0&param2=0](https://cdn.discordapp.com/type/1234567890.jpg?param1=0&param2=0)
-|__Redirect__|`https://cdn.discordapp.com/*/*.*?param1=0&param2=0`
+|__Redirect__|`https://cdn.discordapp.com/*/*.*?*`
 |__To__|`https://cdn.discordapp.com/$1/$2.$3`
 |__Type__|Wildcard
 |__Notes__|In theory, you could set the pattern to apply to `Images` so that every image inside Discord is fetched at its highest quality. <BR> I have not been able to confirm this.
